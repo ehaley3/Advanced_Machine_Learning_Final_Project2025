@@ -1,0 +1,425 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css" panorama-visualizer-style="true">@font-face {
+    font-family: 'InterMedium';
+    src: url('https://panorama-public-images.yuja.com/fonts/inter/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('https://panorama-public-images.yuja.com/fonts/inter/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url('https://panorama-public-images.yuja.com/fonts/inter/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url('https://panorama-public-images.yuja.com/fonts/OpenDyslexic-Regular.otf');
+}
+.panoramaAccessibilityAlignLeft {
+    transition: all 0s ease 0s;
+    text-align: left;
+}
+
+.panoramaAccessibilityAlignCenter {
+    transition: all 0s ease 0s;
+    text-align: center;
+}
+
+.panoramaAccessibilityAlignRight {
+    transition: all 0s ease 0s;
+    text-align: right;
+}
+
+.panoramaAccessibilityArialFont {
+    font-family: Arial, sans-serif !important;
+}
+
+.panoramaAccessibilityTimesFont {
+    font-family: Times, Times New Roman, serif !important;
+}
+
+.panoramaAccessibilityTahomaFont {
+    font-family: Tahoma, sans-serif !important;
+}
+
+.panoramaAccessibilityComicSansFont {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive !important;
+}
+
+.panoramaAccessibilityOpenDyslexicFont {
+    font-family: OpenDyslexic, cursive !important;
+}
+
+.panoramaAccessibilityTimesSmallContentSpacing {
+    word-spacing: 10px !important;
+}
+
+.panoramaAccessibilityTimesMediumContentSpacing {
+    word-spacing: 20px !important;
+}
+
+.panoramaAccessibilityTimesLargeContentSpacing {
+    word-spacing: 30px !important;
+}
+
+.panoramaAccessibilityTimesSmallFontSizing {
+    font-size: 16px !important;
+    line-height: 1.5;
+}
+
+.panoramaAccessibilityTimesMediumFontSizing {
+    font-size: 22px !important;
+    line-height: 1.4;
+}
+
+.panoramaAccessibilityTimesLargeFontSizing {
+    font-size: 26px !important;
+    line-height: 1.4;
+}
+
+.panoramaAccessibilityTimesSmallLineHeight {
+    line-height: 37.5px !important;
+}
+
+.panoramaAccessibilityTimesMediumLineHeight {
+    line-height: 43.75px !important;
+}
+
+.panoramaAccessibilityTimesLargeLineHeight {
+    line-height: 50px !important;
+}
+
+.panoramaAccessibilityTimesSmallLetterSpacing {
+    letter-spacing: 0.12em !important;
+}
+
+.panoramaAccessibilityTimesMediumLetterSpacing {
+    letter-spacing: 0.24em !important;
+}
+
+.panoramaAccessibilityTimesLargeLetterSpacing {
+    letter-spacing: 0.36em !important;
+}
+
+.panoramaAccessibilityHideImages {
+    visibility: hidden;
+}
+
+.panoramaAccessibilityPauseAnimations {
+    transition-timing-function: step-end !important;
+    transition-duration: 0s !important;
+    animation-timing-function: step-end !important;
+    animation-iteration-count: 1 !important;
+    animation-duration: 0s !important;
+}
+
+.panoramaAccessibilityReadingMaskTopContainer {
+    position: fixed !important;
+    z-index: 2147483647 !important;
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    top: 0px;
+    pointer-events: none;
+}
+
+.panoramaAccessibilityReadingMaskTop {
+    width: 100% !important;
+    height: 8px !important;
+    position: absolute !important;
+    bottom: 0px;
+}
+
+.panoramaAccessibilityReadingMaskBottomContainer {
+    bottom: 0px;
+    position: fixed !important;
+    z-index: 2147483647 !important;
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    pointer-events: none;
+}
+
+.panoramaAccessibilityReadingMaskBottom {
+    width: 100% !important;
+    height: 8px !important;
+    position: absolute !important;
+    top: 0px;
+}
+
+/* 
+    Customization CSS Properties
+*/
+:root {
+    --panorama-accessibility-font-size: 16px;
+    --panorama-accessibility-content-spacing: 10px;
+    --panorama-accessibility-letter-spacing: 16px;
+    --panorama-accessibility-line-height: 16px;
+    --panorama-accessibility-custom-text-color: '';
+    --panorama-accessibility-custom-title-color: '';
+    --panorama-accessibility-custom-background-color: '';
+    --panorama-accessibility-custom-highlight-title-color: '';
+    --panorama-accessibility-custom-outline-title-color: '';
+    --panorama-accessibility-custom-highlight-link-color: '';
+    --panorama-accessibility-custom-outline-link-color: '';
+    --panorama-accessibility-custom-highlight-button-color: '';
+    --panorama-accessibility-custom-outline-button-color: '';
+    --panorama-accessibility-custom-reading-guide-width: 500px;
+}
+
+.panoramaAccessibilityReadingGuide,
+.panoramaAccessibilityCustomReadingGuide {
+    display: block !important;
+    position: fixed !important;
+    right: auto !important;
+    margin: auto !important;
+    max-width: 500px !important;
+    width: 100% !important;
+    padding: 2px !important;
+    border-radius: 50px !important;
+    pointer-events: none !important;
+    background-color: white !important;
+    border: 3px solid #42296e !important;
+    z-index: 100000000000000020000 !important;
+}
+
+.panoramaAccessibilityCustomReadingGuide {
+    max-width: var(
+        --panorama-accessibility-custom-reading-guide-width
+    ) !important;
+}
+
+.panoramaAccessibilityCustomFontSizing {
+    font-size: var(--panorama-accessibility-font-size) !important;
+}
+
+.panoramaAccessibilityCustomContentSpacing {
+    word-spacing: var(--panorama-accessibility-content-spacing) !important;
+}
+
+.panoramaAccessibilityCustomLineHeight {
+    line-height: var(--panorama-accessibility-line-height) !important;
+}
+
+.panoramaAccessibilityCustomLetterSpacing {
+    letter-spacing: var(--panorama-accessibility-letter-spacing) !important;
+}
+
+.panoramaAccessibilityCustomTextColor {
+    color: var(--panorama-accessibility-custom-text-color) !important;
+}
+
+.panoramaAccessibilityCustomTitleColor {
+    color: var(--panorama-accessibility-custom-title-color) !important;
+}
+
+.panoramaAccessibilityCustomBackgroundColor {
+    background-color: var(
+        --panorama-accessibility-custom-background-color
+    ) !important;
+}
+
+.panoramaAccessibilityCustomHighlightTitleColor {
+    background-color: var(
+        --panorama-accessibility-custom-highlight-title-color
+    ) !important;
+    color: white !important;
+}
+
+.panoramaAccessibilityCustomHighlightLinkColor {
+    background-color: var(
+        --panorama-accessibility-custom-highlight-link-color
+    ) !important;
+    color: white !important;
+}
+
+.panoramaAccessibilityCustomOutlineTitleColor {
+    border: 5px solid var(--panorama-accessibility-custom-outline-title-color) !important;
+}
+
+.panoramaAccessibilityCustomOutlineLinkColor {
+    border: 5px solid var(--panorama-accessibility-custom-outline-link-color) !important;
+}
+
+.panoramaAccessibilityCustomHighlightButtonColor {
+    background-color: var(
+        --panorama-accessibility-custom-highlight-button-color
+    ) !important;
+    color: white !important;
+}
+
+.panoramaAccessibilityCustomOutlineButtonColor {
+    border: 5px solid var(--panorama-accessibility-custom-outline-button-color) !important;
+}
+
+.panoramaAccessibilityHighlightTitleYellow,
+.panoramaAccessibilityHighlightLinkYellow,
+.panoramaAccessibilityHighlightButtonYellow {
+    background-color: #feea32 !important;
+    color: black !important;
+}
+
+.panoramaAccessibilityHighlightTitleGreen,
+.panoramaAccessibilityHighlightLinkGreen,
+.panoramaAccessibilityHighlightButtonGreen {
+    background-color: #0d6c05 !important;
+    color: white !important;
+}
+
+.panoramaAccessibilityHighlightTitleBlue,
+.panoramaAccessibilityHighlightLinkBlue,
+.panoramaAccessibilityHighlightButtonBlue {
+    background-color: #0277ad !important;
+    color: white !important;
+}
+
+.panoramaAccessibilityOutlineTitleYellow,
+.panoramaAccessibilityOutlineLinkYellow,
+.panoramaAccessibilityOutlineButtonYellow {
+    border: 5px solid #feea32 !important;
+}
+
+.panoramaAccessibilityOutlineTitleGreen,
+.panoramaAccessibilityOutlineLinkGreen,
+.panoramaAccessibilityOutlineButtonGreen {
+    border: 5px solid #0d6c05 !important;
+}
+
+.panoramaAccessibilityOutlineTitleBlue,
+.panoramaAccessibilityOutlineLinkBlue,
+.panoramaAccessibilityOutlineButtonBlue {
+    border: 5px solid #0277ad !important;
+}
+
+/* 
+    Color Adjustment Tab
+*/
+
+.panoramaAccessibilityDarkContrast {
+    transition: all 0.25s ease 0s;
+    background-color: rgb(0, 0, 0) !important;
+    border-color: rgb(255, 255, 255) !important;
+    color: rgb(80, 208, 160) !important;
+}
+
+.panoramaAccessibilityLightContrast {
+    transition: all 0.25s ease 0s;
+    background-color: rgb(255, 255, 255) !important;
+    border-color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.panoramaAccessibilityHighContrast {
+    transition: all 0.25s ease 0s;
+    filter: contrast(135%);
+    -webkit-filter: contrast(135%);
+    -moz-filter: contrast(135%);
+    -ms-filter: contrast(135%);
+    -o-filter: contrast(135%);
+}
+
+.panoramaAccessibilityLowSaturation {
+    transition: all 0s ease 0s;
+    filter: saturate(50%) !important;
+    -webkit-filter: saturate(50%) !important;
+    -moz-filter: saturate(50%);
+    -ms-filter: saturate(50%);
+    -o-filter: saturate(50%);
+}
+
+.panoramaAccessibilityMediumSaturation {
+    transition: all 0s ease 0s;
+    filter: saturate(125%) !important;
+    -webkit-filter: saturate(125%) !important;
+    -moz-filter: saturate(125%);
+    -ms-filter: saturate(125%);
+    -o-filter: saturate(125%);
+}
+
+.panoramaAccessibilityHighSaturation {
+    transition: all 0s ease 0s;
+    filter: saturate(200%) !important;
+    -webkit-filter: saturate(200%) !important;
+    -moz-filter: saturate(200%);
+    -ms-filter: saturate(200%);
+    -o-filter: saturate(200%);
+}
+
+.panoramaAccessibilityMonochrome {
+    filter: url(#monochromic) !important;
+    -webkit-filter: url(#monochromic) !important;
+    -moz-filter: url(#monochromic);
+    -ms-filter: url(#monochromic);
+    -o-filter: url(#monochromic);
+}
+
+.panoramaAccessibilityProtanopia {
+    filter: url(#protanopia) !important;
+    -webkit-filter: url(#protanopia) !important;
+    -moz-filter: url(#protanopia);
+    -ms-filter: url(#protanopia);
+    -o-filter: url(#protanopia);
+}
+
+.panoramaAccessibilityDeuteranopia {
+    filter: url(#deuteranopia) !important;
+    -webkit-filter: url(#deuteranopia) !important;
+    -moz-filter: url(#deuteranopia);
+    -ms-filter: url(#deuteranopia);
+    -o-filter: url(#deuteranopia);
+}
+
+.panoramaAccessibilityTritanopia {
+    filter: url(#tritanopia) !important;
+    -webkit-filter: url(#tritanopia) !important;
+    -moz-filter: url(#tritanopia);
+    -ms-filter: url(#tritanopia);
+    -o-filter: url(#tritanopia);
+}
+
+.panoramaAccessibilityTextColorWhite,
+.panoramaAccessibilityTitleColorWhite {
+    color: white !important;
+}
+
+.panoramaAccessibilityTextColorYellow,
+.panoramaAccessibilityTitleColorYellow {
+    color: yellow !important;
+}
+
+.panoramaAccessibilityTextColorGreen,
+.panoramaAccessibilityTitleColorGreen {
+    color: green !important;
+}
+
+.panoramaAccessibilityTextColorBlue,
+.panoramaAccessibilityTitleColorBlue {
+    color: blue !important;
+}
+
+.panoramaAccessibilityBackgroundColorYellow {
+    background-color: yellow !important;
+}
+
+.panoramaAccessibilityBackgroundColorGreen {
+    background-color: green !important;
+}
+
+.panoramaAccessibilityBackgroundColorBlue {
+    background-color: blue !important;
+}
+
+.panoramaAccessibilityBigBlackCursor,
+.panoramaAccessibilityBigBlackCursor * {
+    cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMTYyNDQgOS4wOTMyMUwxOC4wNzQ5IDM4LjE5MzJDMTguMTgzNCAzOC40Nzk2IDE4LjM3NjkgMzguNzI1OSAxOC42Mjk1IDM4Ljg5OTFDMTguODgyIDM5LjA3MjIgMTkuMTgxNSAzOS4xNjQgMTkuNDg3NyAzOS4xNjE5QzE5Ljc5MzkgMzkuMTU5OSAyMC4wOTIyIDM5LjA2NDIgMjAuMzQyNCAzOC44ODc2QzIwLjU5MjYgMzguNzExMSAyMC43ODI4IDM4LjQ2MjIgMjAuODg3NCAzOC4xNzQ1TDI1LjI1NjIgMjYuMTU1N0MyNS4zMzIyIDI1Ljk0OTUgMjUuNDUyIDI1Ljc2MjMgMjUuNjA3NCAyNS42MDY5QzI1Ljc2MjcgMjUuNDUxNSAyNS45NSAyNS4zMzE3IDI2LjE1NjIgMjUuMjU1N0wzOC4xNzQ5IDIwLjg4N0MzOC40NjI3IDIwLjc4MjMgMzguNzExNiAyMC41OTIxIDM4Ljg4ODEgMjAuMzQxOUMzOS4wNjQ3IDIwLjA5MTcgMzkuMTYwNCAxOS43OTM0IDM5LjE2MjQgMTkuNDg3MkMzOS4xNjQ0IDE5LjE4MSAzOS4wNzI3IDE4Ljg4MTUgMzguODk5NiAxOC42MjlDMzguNzI2NCAxOC4zNzY0IDM4LjQ4MDEgMTguMTgyOSAzOC4xOTM3IDE4LjA3NDVMOS4wOTM2OSA3LjE2MTk2QzguODI0MDEgNy4wNjA4IDguNTMwOTEgNy4wMzk0MyA4LjI0OTQgNy4xMDAzOUM3Ljk2NzkgNy4xNjEzNiA3LjcwOTkgNy4zMDIwOCA3LjUwNjIzIDcuNTA1NzVDNy4zMDI1NyA3LjcwOTQxIDcuMTYxODQgNy45Njc0MSA3LjEwMDg4IDguMjQ4OTJDNy4wMzk5MiA4LjUzMDQyIDcuMDYxMjkgOC44MjM1MiA3LjE2MjQ0IDkuMDkzMjFWOS4wOTMyMVoiIGZpbGw9ImJsYWNrIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjUuNjEyNSAyNS42MTMzTDQyLjg5MjUgNDIuODkzMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIzLjg3MjI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==),
+        auto !important;
+}
+
+.panoramaAccessibilityBigWhiteCursor,
+.panoramaAccessibilityBigWhiteCursor * {
+    cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDYiIHZpZXdCb3g9IjAgMCA1MSA1MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuMTE2MjggNC40NjY1OUwxNS4zOTY3IDM5Ljg4MDlDMTUuNTI4NiA0MC4yMjk0IDE1Ljc2NDEgNDAuNTI5MiAxNi4wNzE1IDQwLjczOTlDMTYuMzc4OCA0MC45NTA3IDE2Ljc0MzMgNDEuMDYyMyAxNy4xMTYgNDEuMDU5OEMxNy40ODg2IDQxLjA1NzMgMTcuODUxNiA0MC45NDA5IDE4LjE1NjEgNDAuNzI2QzE4LjQ2MDYgNDAuNTExMiAxOC42OTIxIDQwLjIwODMgMTguODE5NCAzOS44NTgxTDI0LjEzNjEgMjUuMjMxNEMyNC4yMjg2IDI0Ljk4MDUgMjQuMzc0NCAyNC43NTI2IDI0LjU2MzUgMjQuNTYzNUMyNC43NTI2IDI0LjM3NDQgMjQuOTgwNSAyNC4yMjg2IDI1LjIzMTQgMjQuMTM2MUwzOS44NTgxIDE4LjgxOTRDNDAuMjA4MyAxOC42OTIxIDQwLjUxMTIgMTguNDYwNiA0MC43MjYgMTguMTU2MUM0MC45NDA5IDE3Ljg1MTYgNDEuMDU3MyAxNy40ODg2IDQxLjA1OTggMTcuMTE2QzQxLjA2MjMgMTYuNzQzMyA0MC45NTA3IDE2LjM3ODggNDAuNzM5OSAxNi4wNzE1QzQwLjUyOTIgMTUuNzY0MSA0MC4yMjk0IDE1LjUyODYgMzkuODgwOSAxNS4zOTY3TDQuNDY2NTkgMi4xMTYyOEM0LjEzODM5IDEuOTkzMTggMy43ODE2OSAxLjk2NzE3IDMuNDM5MSAyLjA0MTM2QzMuMDk2NTEgMi4xMTU1NSAyLjc4MjUzIDIuMjg2ODEgMi41MzQ2NyAyLjUzNDY3QzIuMjg2ODEgMi43ODI1MyAyLjExNTU1IDMuMDk2NTEgMi4wNDEzNiAzLjQzOTFDMS45NjcxNyAzLjc4MTY5IDEuOTkzMTggNC4xMzgzOSAyLjExNjI4IDQuNDY2NTlWNC40NjY1OVoiIGZpbGw9IndoaXRlIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIuNDMzOTciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cmVjdCB4PSIyNC44OTcxIiB5PSIyMS4xMTY5IiB3aWR0aD0iMzYuMDk3NiIgaGVpZ2h0PSI3LjQ2NzA1IiByeD0iMy43MzM1MiIgdHJhbnNmb3JtPSJyb3RhdGUoNDQuNDM0MiAyNC44OTcxIDIxLjExNjkpIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyLjQzMzk3Ii8+CjxyZWN0IHg9IjE1LjI2OTciIHk9IjIzLjI2MzciIHdpZHRoPSIxNC44Nzk0IiBoZWlnaHQ9IjcuNTAzNDIiIHRyYW5zZm9ybT0icm90YXRlKC00MS40OTc2IDE1LjI2OTcgMjMuMjYzNykiIGZpbGw9IndoaXRlIi8+CjxsaW5lIHgxPSIxNy44NjczIiB5MT0iMzMuMDExNyIgeDI9IjIzLjMyNDEiIHkyPSIyMi4wNjU5IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIuNDMzOTciLz4KPGxpbmUgeDE9IjIwLjg5OTgiIHkxPSIyMy45ODk4IiB4Mj0iMzIuMDkyNCIgeTI9IjE5LjA1OTEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMi40MzM5NyIvPgo8L3N2Zz4K),
+        auto !important;
+}
+</style></head><body></body></html>
